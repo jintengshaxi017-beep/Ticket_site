@@ -14,7 +14,7 @@
     <button id="useBtn">使用する</button>
 
     <script>
-    document>addEventListener("DOMContentLoaded", function(){
+    document.addEventListener("DOMContentLoaded", function(){
         const ticketName="お夜食券";
         const cooldown=1000*60*60;
         const lastUsed=localStorage.getItem(ticketName);
@@ -28,7 +28,7 @@
         }
 
         btn.onclick=function(){
-            localStorage.setItem(ticketName, Data.now());
+            localStorage.setItem(ticketName, Date.now());
             window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
         };
     });
@@ -36,6 +36,7 @@
 </body>
 
 </html>
+
 
 
 

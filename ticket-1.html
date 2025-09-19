@@ -25,11 +25,12 @@
             btn.innerText="使用不可";
         }
 
-        btn.addEventListener("click", function(){
+        btn.onclick=function(){
             localStorage.setItem(ticketName, Data.now());
-            window.location.href="pages/used.html?ticket=" + encodeURIComponent(ticketName);
-        });
+            window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
+        };
     </script>
 </body>
 
 </html>
+

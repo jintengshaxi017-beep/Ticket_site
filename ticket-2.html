@@ -26,10 +26,11 @@
         }
 
         btn.addEventListener("click", function(){
-            localStorage.setItem(ticketName, Data.now());
+            localStorage.setItem(ticketName, Date.now());
             window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
         });
     </script>
 </body>
 
 </html>
+

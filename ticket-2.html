@@ -14,23 +14,27 @@
     <button id="useBtn">使用する</button>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function(){
         const ticketName="仲直り券";
         const cooldown=1000*60*60;
         const lastUsed=localStorage.getItem(ticketName);
         const now=Date.now();
 
         const btn=document.getElementById("useBtn");
+        
         if(lastUsed && now - lastUsed < cooldown){
             btn.disabled=true;
             btn.innerText="使用不可";
         }
 
-        btn.addEventListener("click", function(){
+        btn.onclick=function(){
             localStorage.setItem(ticketName, Date.now());
             window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
-        });
+        };
+    });
     </script>
 </body>
 
 </html>
+
 

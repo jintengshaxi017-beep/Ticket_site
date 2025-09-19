@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>使用完了</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>チケットが利用できました</h1>
+    <p id="ticketUsed"></p>
+    <button onclick="location.href='index.html'">ホームに戻る</button>
+
+    <script>
+        const params=new URLSearchParams(window.location.search);
+        const ticket=params.get('ticket');
+        document.getElementById("ticketUsed").innerText=ticket +"を使用しました";
+        </script>
+</body>
+</html>

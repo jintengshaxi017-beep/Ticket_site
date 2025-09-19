@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>⭐なんでも券サイト⭐</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+    const password="oyabunn";
+    let userInput=prompt("パスワードを入力してね：");
+    if(userInput !== password){
+        alert("パスワードが違うよ");
+        window.location.href = "https://google.com";
+    }
+</script>
+
+<h1>ようこそ</h1>
+<button id="showTicketsBtn">チケットを選ぶ</button>
+
+<div id="ticketList" style="display:none;">
+    <div class="ticket" onclick="location.href='ticket-1.html'">
+    <img src="midnight_snack.png" alt="お夜食券">
+    <p>お夜食券</p>
+    </div>
+
+    <div class="ticket" onclick="location.href='ticket-2.html'">
+    <img src="make_up.png" alt="仲直り券">
+    <p>仲直り券</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("showTicketsBtn").addEventListener("click", function(){
+        document.getElementById("ticketList").style.display="block";
+    });
+</script>
+
+</body>
+</html>

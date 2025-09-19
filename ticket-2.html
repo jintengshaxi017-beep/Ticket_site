@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>仲直り券</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>仲直り券</h1>
+    <img src="midnight_snack.png" style="width: 300px;">
+    <p>ピンチな時に仲直りができる券です</p>
+    <p>※1か月に6回利用できます</p>
+    <button id="useBtn">使用する</button>
+
+    <script>
+        const ticketName="仲直り券";
+        const cooldown=1000*60*60;
+        const lastUsed=localStorage.getItem(ticketName);
+        const now=Date.now();
+
+        const btn=document.getElementById("useBtn");
+        if(lastUsed && now - lastUsed < cooldown){
+            btn.disabled=true;
+            btn.innerText="使用不可";
+        }
+
+        btn.addEventListener("click", function(){
+            localStorage.setItem(ticketName, Data.now());
+            window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
+        });
+    </script>
+</body>
+</html>

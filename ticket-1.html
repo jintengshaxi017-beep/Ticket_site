@@ -23,7 +23,7 @@
         if(lastUsed && now - lastUsed < cooldown){
             btn.disabled=true;
             btn.innerText="使用不可";
-        }
+        };
 
         btn.onclick=function(){
             localStorage.setItem(ticketName, Data.now());
@@ -33,4 +33,5 @@
 </body>
 
 </html>
+
 

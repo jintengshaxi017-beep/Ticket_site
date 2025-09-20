@@ -84,4 +84,30 @@ button:hover {
     }
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  background-color: #ff4136;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.navbar button:hover {
+  background-color: #e33b2f;
+}
+
 

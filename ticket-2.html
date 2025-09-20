@@ -28,17 +28,16 @@
             btn.innerText="使用不可";
         }
 
-        btn.onclick = function() {
-            const history = JSON.parse(localStorage.getItem(ticketName) || "[]");
-            history.push(Date.now());
-            localStorage.setItem(ticketName, JSON.stringify(history));
-            window.location.href = "used.html?ticket=" + encodeURIComponent(ticketName);
+        btn.onclick=function(){
+            localStorage.setItem(ticketName, Date.now());
+            window.location.href="used.html?ticket=" + encodeURIComponent(ticketName);
         };
     });
     </script>
 </body>
 
 </html>
+
 
 
 

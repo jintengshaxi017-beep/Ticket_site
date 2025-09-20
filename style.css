@@ -15,6 +15,10 @@ body{
     text-align: center;
 }
 
+h1,p {
+    text-align: center;
+}
+
 .ticket img {
     width: 100%;
     max-width: 300px;
@@ -39,10 +43,13 @@ button{
     cursor: pointer;
     font-weight: bold;
     transition: transform 0.2s;
+    display: block;
+    margin: 20px auto;
 }
 
 button:hover {
     transform: scale(1.05);
 }
+
 
 

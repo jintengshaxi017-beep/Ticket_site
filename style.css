@@ -12,7 +12,7 @@ body{
     background: rgba(255,255,255,0.85);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    text-aligin: center;
+    text-align: center;
 }
 
 .ticket img {
@@ -20,13 +20,13 @@ body{
     max-width: 300px;
     margin: 15px auto;
     display: block;
-    border: 3px solid #FF;
+    border: 3px solid #FF0000;
     border-radius: 12px; 
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     transition: transform 0.3s ease;
 }
 
-.ticket-img: hover {
+.ticket img: hover {
     transform: scale(1.05);
 }
 
@@ -44,3 +44,4 @@ button{
 button: hover {
     transform: scale(1.05);
 }
+

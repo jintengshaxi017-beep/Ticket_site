@@ -3,6 +3,7 @@ body{
     font-family: "Comic Sans MS", "Arial", sans-serif;
     background: url("bg.png");
     background-size: cover;
+    font-size: 18px;
 }
 
 .container{
@@ -51,5 +52,36 @@ button:hover {
     transform: scale(1.05);
 }
 
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .ticket img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    button{
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
 
 

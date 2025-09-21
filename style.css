@@ -30,8 +30,11 @@ p {
 }
 
 .ticket p {
-  font-family: 'Bangers', cursive; 
+  text-align: center;
+  font-family: 'Bangers', cursive;
   color: #ffcc00;
+  font-size: 1.2em;
+  margin-top: 5px;
   text-shadow: 1px 1px 2px #ff69b4;
 }
 
@@ -125,6 +128,7 @@ button:hover {
 .navbar button:hover {
   background-color: #e33b2f;
 }
+
 
 
 

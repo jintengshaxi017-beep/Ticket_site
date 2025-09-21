@@ -24,8 +24,10 @@
         const btn=document.getElementById("useBtn");
         
         if(lastUsed && now - lastUsed < cooldown){
-            btn.disabled=true;
-            btn.innerText="使用不可";
+            btn.disabled = true;
+            const availableAt = new Date(lastUsed + cooldown);
+            const formatted = availableAt.toLocaleString("ja-JP");
+            btn.innerText = `使用不可（${formatted}以降）`;
         }
 
         btn.onclick=function(){
@@ -37,6 +39,7 @@
 </body>
 
 </html>
+
 
 
 
